@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <link rel="stylesheet" type="text/css" href="reset.css" />
+
+        <script
+            src="https://kit.fontawesome.com/2dfdea42b7.js"
+            crossorigin="anonymous"
+        ></script>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700;900&display=swap"
+            rel="stylesheet"
+        />
+
+        <link rel="stylesheet" type="text/css" href="styles.css" />
+        <title>Portfolio</title>
+    </head>
+    <body>
+        <header class="header">
+            <img
+                src="./portfolio-logo.png"
+                alt="Ben Rae Logo"
+                class="header__logo"
+            />
+            <nav class="header__nav">
+                <ul class="header__list">
+                    <li class="header__list-item">
+                        <a class="header__link" href="#about">About</a>
+                    </li>
+                    <li class="header__list-item">
+                        <a class="header__link" href="#projects">Projects</a>
+                    </li>
+                    <li class="header__list-item">
+                        <a class="header__link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section id="about" class="about">
+                <h1 class="about__title">
+                    Hi there,<br />my name's <strong>Ben</strong>
+                </h1>
+                <!-- <div class="about__bio-container"> -->
+                <p class="about__bio">
+                    I'm a <strong>Full Stack Web Developer</strong> based in
+                    Barcelona, Spain
+                </p>
+                <div class="about__img-container">
+                    <img src="./portfolio-logo.png" alt="" class="about__img" />
+                </div>
+                <!-- </div> -->
+
+                <div class="about__tools-container">
+                    <ul class="about__tools-list">
+                        <li class="about__tools-list-item">
+                            <i class="fa-brands fa-html5 fa-4x"></i>
+                        </li>
+                        <li class="about__tools-list-item">
+                            <i class="fa-brands fa-css3-alt fa-4x"></i>
+                        </li>
+                        <li class="about__tools-list-item">
+                            <i class="fa-brands fa-js fa-4x"></i>
+                        </li>
+                        <li class="about__tools-list-item">
+                            <i class="fa-brands fa-react fa-4x"></i>
+                        </li>
+                        <li class="about__tools-list-item">
+                            <i class="fa-brands fa-node-js fa-4x"></i>
+                        </li>
+                        <li class="about__tools-list-item">
+                            <i class="fa-brands fa-github-square fa-4x"></i>
+                        </li>
+                        <li class="about__tools-list-item">
+                            <i class="fa-brands fa-git-alt fa-4x"></i>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section id="projects" class="projects">
+                <h2 class="projects__title">Projects</h2>
+                <div class="project__card">
+                    <h3 class="project__title">Pasapalabra</h3>
+                    <img
+                        src="./pasapalabra-screenshot-in-game.png"
+                        alt="Project 1 Screenshot"
+                        class="project__img"
+                    />
+                    <div class="project__buttons-container">
+                        <button class="project__button">
+                            <a href="">Live</a>
+                        </button>
+                        <button class="project__button">
+                            <a href="">GitHub</a>
+                        </button>
+                    </div>
+                    <p class="project__description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Ex alias eaque placeat, labore aliquam in nulla dolores
+                        eveniet laborum saepe perspiciatis quibusdam suscipit
+                        exercitationem nobis ipsam, illo obcaecati consequatur
+                        temporibus?
+                    </p>
+                    <ul class="project__tag-list">
+                        <li class="project__tag">HTML</li>
+                        <li class="project__tag">CSS</li>
+                        <li class="project__tag">JS</li>
+                    </ul>
+                </div>
+                <div class="project__card">
+                    <h3 class="project__title">Pasapalabra</h3>
+                    <img
+                        src="/pasapalabra-screenshot-in-game.png"
+                        alt=""
+                        class="project__img"
+                    />
+                    <div class="project__buttons-container">
+                        <button class="project__button">
+                            <a
+                                href="https://cerulean-lokum-c4292b.netlify.app/"
+                                target="_blank"
+                                >Live</a
+                            >
+                        </button>
+                        <button class="project__button">
+                            <a
+                                href="https://github.com/benjaminrae/pasapalabra"
+                                target="_blank"
+                                >GitHub</a
+                            >
+                        </button>
+                    </div>
+                    <p class="project__description">
+                        This project was created as part of the ISDI Coders
+                        Bootcamp precourse. The goal was to create a game that
+                        works in the same way the hit Spanish TV game show does.
+                        Users are presented with a letter wheel. During the
+                        game, users are given a letter and a question and the
+                        answer to the question normally starts with that letter.
+                        If the answer is correct, the letter turns green,
+                        otherwise it turns red if they get it wrong. Users can
+                        skip a question and come back to it later by saying the
+                        word "pasapalabra".
+                    </p>
+                    <ul class="project__tag-list">
+                        <li class="project__tag">HTML</li>
+                        <li class="project__tag">CSS</li>
+                        <li class="project__tag">JS</li>
+                    </ul>
+                </div>
+                <div class="project__card">
+                    <h3 class="project__title">Calculator</h3>
+                    <img
+                        src="./calculator-screenshot.png"
+                        alt="Calculator Screenshot"
+                        class="project__img"
+                    />
+                    <div class="project__buttons-container">
+                        <button class="project__button">
+                            <a
+                                href="https://boisterous-salmiakki-f2b1c0.netlify.app/"
+                                target="_blank"
+                                >Live</a
+                            >
+                        </button>
+                        <button class="project__button">
+                            <a
+                                href="https://github.com/benjaminrae/calculator"
+                                target="_blank"
+                                >GitHub</a
+                            >
+                        </button>
+                    </div>
+                    <p class="project__description">
+                        This project was built as part of the precourse for the
+                        ISDI Coders Bootcamp. I tried to create a design similar
+                        to that of the iOS calculator app. This was my first
+                        experience at joining HTML, CSS and JS. The site has
+                        full keyboard functionality.
+                    </p>
+
+                    <ul class="project__tag-list">
+                        <li class="project__tag">HTML</li>
+                        <li class="project__tag">CSS</li>
+                        <li class="project__tag">JS</li>
+                    </ul>
+                </div>
+            </section>
+            <section class="contact" id="contact">
+                <h2 class="contact__title">Contact</h2>
+                <form class="contact__form" action="">
+                    <div class="contact__form-left-container">
+                        <div class="contact__form-name-container">
+                            <label class="contact__form-name-label" for=""
+                                >Name:</label
+                            >
+                            <br />
+                            <input
+                                class="contact__form-name-input"
+                                type="text"
+                                name=""
+                                id=""
+                                required
+                            />
+                        </div>
+                        <div class="contact__form-email-container">
+                            <label class="contact__form-email-label" for=""
+                                >Email:</label
+                            >
+                            <br />
+                            <input
+                                class="contact__form-email-input"
+                                type="email"
+                                name=""
+                                id=""
+                                required
+                            />
+                        </div>
+                        <button class="contact__form-submit" type="submit">
+                            Submit
+                        </button>
+                    </div>
+                    <div class="contact__form-right-container">
+                        <label class="contact__form-message-label" for=""
+                            >Message:</label
+                        >
+                        <textarea
+                            class="contact__form-message-input"
+                            name=""
+                            id=""
+                            cols="40"
+                            rows="20"
+                            required
+                        ></textarea>
+                    </div>
+                </form>
+            </section>
+        </main>
+        <footer class="footer">
+            <img
+                class="footer__logo"
+                src="./portfolio-logo-white.png"
+                alt="Benjamin Rae Logo"
+            />
+            <p>Benjamin Rae &copy; 2022</p>
+        </footer>
+    </body>
+</html>

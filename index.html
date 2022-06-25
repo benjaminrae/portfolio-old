@@ -85,7 +85,7 @@
                 <div class="about__img-container">
                     <img
                         src="./resources/logos/portfolio-logo.png"
-                        alt=""
+                        alt="Benjamin Rae Logo"
                         class="about__img"
                     />
                 </div>
@@ -229,38 +229,56 @@
             <section class="contact" id="contact">
                 <h2 class="contact__title">Contact</h2>
                 <form class="contact__form" action="" method="POST">
-                    <div class="contact__form-left-container">
-                        <div class="contact__form-name-container">
-                            <label
-                                class="contact__form-name-label"
-                                for="contact-name"
-                                >Name:</label
-                            >
-                            <br />
-                            <input
-                                class="contact__form-name-input"
-                                type="text"
-                                name="contact-name"
-                                id="contact-name"
-                                placeholder="Write your name here"
-                                required
-                            />
+
+                    
+                            <div class="contact__form-name-container">
+                                <label
+                                    class="contact__form-name-label"
+                                    for="contact-name"
+                                    >Name:</label
+                                >
+                                <br />
+                                <input
+                                    class="contact__form-name-input"
+                                    type="text"
+                                    name="contact-name"
+                                    id="contact-name"
+                                    placeholder="Write your name here"
+                                    required
+                                />
+                            </div>
+                            <div class="contact__form-email-container">
+                                <label
+                                    class="contact__form-email-label"
+                                    for="contact-email"
+                                    >Email:</label
+                                >
+                                <br />
+                                <input
+                                    class="contact__form-email-input"
+                                    type="email"
+                                    name="contact-email"
+                                    id="contact-email"
+                                    placeholder="Write your email here"
+                                    required
+                                />
+                            </div>
                         </div>
-                        <div class="contact__form-email-container">
+                        <div class="contact__form-message-container">
                             <label
-                                class="contact__form-email-label"
-                                for="contact-email"
-                                >Email:</label
+                                class="contact__form-message-label"
+                                for="contact-message"
+                                >Message:</label
                             >
-                            <br />
-                            <input
-                                class="contact__form-email-input"
-                                type="email"
-                                name="contact-email"
-                                id="contact-email"
-                                placeholder="Write your email here"
+                            <textarea
+                                class="contact__form-message-input"
+                                name="contact-message"
+                                id="contact-message"
+                                cols="30"
+                                rows="15"
+                                placeholder="Write your message here"
                                 required
-                            />
+                            ></textarea>
                         </div>
                         <button
                             id="contact-button"
@@ -269,23 +287,7 @@
                         >
                             Send
                         </button>
-                    </div>
-                    <div class="contact__form-right-container">
-                        <label
-                            class="contact__form-message-label"
-                            for="contact-message"
-                            >Message:</label
-                        >
-                        <textarea
-                            class="contact__form-message-input"
-                            name="contact-message"
-                            id="contact-message"
-                            cols="30"
-                            rows="15"
-                            placeholder="Write your message here"
-                            required
-                        ></textarea>
-                    </div>
+                   
                 </form>
                 <div class="contact__toast-success">
                     <p
@@ -326,7 +328,7 @@
         <footer class="footer">
             <img
                 class="footer__logo"
-                src="./portfolio-logo-white.png"
+                src="./resources/logos/portfolio-logo-white.png"
                 alt="Benjamin Rae Logo"
             />
             <p>Benjamin Rae &copy; 2022</p>

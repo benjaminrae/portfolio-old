@@ -76,6 +76,7 @@ header {
 strong {
     font-weight: bolder;
 }
+
 .about__bio-container {
     display: flex;
     flex-direction: row;
@@ -98,8 +99,8 @@ strong {
     grid-area: 1 / 2 / 2 / 2;
     /* max-width: 8rem; */
     display: flex;
-    justify-content: center;
-    align-content: flex-start;
+    justify-content: flex-end;
+    align-content: flex-end;
 }
 
 .about__img {
@@ -129,7 +130,7 @@ strong {
 
 .projects {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fill, minmax(24.2rem, auto));
     grid-template-rows: 1fr auto;
     grid-gap: 2rem;
     padding: 2rem;
@@ -138,9 +139,20 @@ strong {
 .projects__title {
     font-size: 3rem;
     font-weight: 500;
-    grid-area: 1 / 1 / 1 / 4;
+    grid-area: span 1 / span 3;
 }
 
+@media only screen and (max-width: 1280px) {
+    .projects__title {
+        grid-area: span 1 / span 2;
+    }
+}
+
+@media only screen and (max-width: 870px) {
+    .projects__title {
+        grid-area: span 1 / span 1;
+    }
+}
 .project__card {
     grid-area: span 1 / span 1;
     border: 0.5px solid black;
@@ -247,12 +259,12 @@ strong {
 /* CONTACT */
 
 .contact {
-    height: 35rem;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
     padding: 2rem;
+    row-gap: 2rem;
 }
 
 .contact__title {
@@ -263,27 +275,20 @@ strong {
 
 .contact__form {
     display: flex;
+    flex-direction: column;
     background-color: white;
     border: 1px solid black;
     border-radius: 0.5rem;
     padding: 2rem;
     column-gap: 2rem;
-    min-width: 60rem;
-}
-
-.contact__form-left-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: stretch;
-    flex-basis: 50%;
     row-gap: 2rem;
+    flex-grow: 1;
+    width: 80%;
 }
 
-.contact__form-right-container {
+.contact__form-message-container {
     display: flex;
     flex-direction: column;
-    flex-basis: 50%;
 }
 .contact__form-name-label {
     font-weight: 500;

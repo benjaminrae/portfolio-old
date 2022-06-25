@@ -362,8 +362,12 @@ strong {
     border: 1px solid black;
     border-bottom: inset 0.5rem green;
     border-radius: 0.5rem;
+    color: black;
+    text-align: center;
 }
-
+.contact__toast-success a {
+    color: black;
+}
 .contact__toast-failed {
     display: none;
     position: absolute;
@@ -376,7 +380,10 @@ strong {
     color: black;
 }
 
-/* .fa-linked-in */
+.contact__toast-failed a {
+    color: black;
+}
+
 /* FOOTER */
 
 .footer {

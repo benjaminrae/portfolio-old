@@ -15,7 +15,7 @@ getWakaTimeData();
 console.log(wakaTimeData);
 
 const contactFormEndpoint =
-    "https://powerful-mountain-66898.herokuapp.com/api/contact";
+    "https://wonderfulcorsproxy.herokuapp.com/https://powerful-mountain-66898.herokuapp.com/api/contact";
 
 const sendContactForm = () => {
     const inputName = document.getElementById("contact-name");
@@ -36,7 +36,6 @@ const sendContactForm = () => {
 
             headers: {
                 "Content-Type": "application/json",
-                mode: "no-cors",
             },
             body: JSON.stringify(contactFormData),
         })

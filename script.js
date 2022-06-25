@@ -24,9 +24,9 @@ const sendContactForm = () => {
         return window.alert("Please fill in all of the required fields!");
     }
     const contactFormData = {
-        name: inputName,
-        email: inputEmail,
-        message: inputMessage,
+        name: inputName.value,
+        email: inputEmail.value,
+        message: inputMessage.value,
     };
     console.log(contactFormData);
     try {
@@ -48,9 +48,9 @@ const sendContactForm = () => {
                     document.getElementsByClassName(
                         "contact__toast-success"
                     )[0].style.display = "none";
-                    document.getElementById("contact-name").value = "";
-                    document.getElementById("contact-email").value = "";
-                    document.getElementById("contact-message").value = "";
+                    inputName.value = "";
+                    inputEmail.value = "";
+                    inputMessage.value = "";
                 }, 5000);
             })
             .catch((error) => {

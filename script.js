@@ -14,7 +14,8 @@ const getWakaTimeData = () => {
 getWakaTimeData();
 console.log(wakaTimeData);
 
-const contactFormEndpoint = "http://localhost:3001/api/contact";
+const contactFormEndpoint =
+    "https://powerful-mountain-66898.herokuapp.com/api/contact";
 
 const sendContactForm = () => {
     const inputName = document.getElementById("contact-name");

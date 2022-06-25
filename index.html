@@ -216,52 +216,99 @@
             </section>
             <section class="contact" id="contact">
                 <h2 class="contact__title">Contact</h2>
-                <form class="contact__form" action="">
+                <form class="contact__form" action="" method="POST">
                     <div class="contact__form-left-container">
                         <div class="contact__form-name-container">
-                            <label class="contact__form-name-label" for=""
+                            <label
+                                class="contact__form-name-label"
+                                for="contact-name"
                                 >Name:</label
                             >
                             <br />
                             <input
                                 class="contact__form-name-input"
                                 type="text"
-                                name=""
-                                id=""
+                                name="contact-name"
+                                id="contact-name"
+                                placeholder="Write your name here"
                                 required
                             />
                         </div>
                         <div class="contact__form-email-container">
-                            <label class="contact__form-email-label" for=""
+                            <label
+                                class="contact__form-email-label"
+                                for="contact-email"
                                 >Email:</label
                             >
                             <br />
                             <input
                                 class="contact__form-email-input"
                                 type="email"
-                                name=""
-                                id=""
+                                name="contact-email"
+                                id="contact-email"
+                                placeholder="Write your email here"
                                 required
                             />
                         </div>
-                        <button class="contact__form-submit" type="submit">
-                            Submit
+                        <button
+                            id="contact-button"
+                            class="contact__form-submit"
+                            type="submit"
+                        >
+                            Send
                         </button>
                     </div>
                     <div class="contact__form-right-container">
-                        <label class="contact__form-message-label" for=""
+                        <label
+                            class="contact__form-message-label"
+                            for="contact-message"
                             >Message:</label
                         >
                         <textarea
                             class="contact__form-message-input"
-                            name=""
-                            id=""
-                            cols="40"
-                            rows="20"
+                            name="contact-message"
+                            id="contact-message"
+                            cols="30"
+                            rows="15"
+                            placeholder="Write your message here"
                             required
                         ></textarea>
                     </div>
                 </form>
+                <div class="contact__toast-success">
+                    <p
+                        id="contact-toast-notification-success"
+                        class="contact__toast-message-success"
+                    >
+                        👍 <strong>Success</strong>
+                        You can find me here too:
+                        <br />
+                        <a
+                            href="https://www.linkedin.com/in/benjamin-alexander-rae/"
+                            ><i class="fa-brands fa-linkedin"></i
+                        ></a>
+                        <a href="mailto:benjaminrae93@gmail.com"
+                            ><i class="fa-solid fa-envelope"></i
+                        ></a>
+                    </p>
+                </div>
+                <div class="contact__toast-failed">
+                    <p
+                        id="contact-toast-notification-failed"
+                        class="contact__toast-message-failed"
+                    >
+                        👎 <strong>Failed</strong> <br />
+                        Try contacting me here instead:
+                        <br />
+                        <a
+                            href="https://www.linkedin.com/in/benjamin-alexander-rae/"
+                            ><i class="fa-brands fa-linkedin"></i
+                        ></a>
+                        <a href="mailto:benjaminrae93@gmail.com"
+                            ><i class="fa-solid fa-envelope"></i
+                        ></a>
+                    </p>
+                </div>
             </section>
         </main>
         <footer class="footer">
@@ -271,6 +318,25 @@
                 alt="Benjamin Rae Logo"
             />
             <p>Benjamin Rae &copy; 2022</p>
+            <div class="footer__links">
+                <ul>
+                    <li>
+                        <a href=""
+                            ><i class="fa-brands fa-linkedin fa-2x"></i
+                        ></a>
+                    </li>
+                    <li>
+                        <a href=""
+                            ><i class="fa-solid fa-square-envelope fa-2x"></i
+                        ></a>
+                    </li>
+                    <li>
+                        <a href=""
+                            ><i class="fa-brands fa-github-square fa-2x"></i
+                        ></a>
+                    </li>
+                </ul>
+            </div>
         </footer>
         <script type="module" src="./script.js"></script>
     </body>

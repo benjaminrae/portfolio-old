@@ -13,3 +13,72 @@ const getWakaTimeData = () => {
 
 getWakaTimeData();
 console.log(wakaTimeData);
+
+const contactFormEndpoint = "http://localhost:3001/api/contact";
+
+const sendContactForm = () => {
+    const inputName = document.getElementById("contact-name");
+    const inputEmail = document.getElementById("contact-email");
+    const inputMessage = document.getElementById("contact-message");
+    if (!inputName || !inputEmail || !inputMessage) {
+        return window.alert("Please fill in all of the required fields!");
+    }
+    const contactFormData = {
+        name: inputName,
+        email: inputEmail,
+        message: inputMessage,
+    };
+    console.log(contactFormData);
+    try {
+        fetch(contactFormEndpoint, {
+            method: "POST",
+
+            headers: {
+                "Content-Type": "application/json",
+                mode: "no-cors",
+            },
+            body: JSON.stringify(contactFormData),
+        })
+            .then((response) => {
+                console.log(response);
+                document.getElementsByClassName(
+                    "contact__toast-success"
+                )[0].style.display = "block";
+                setTimeout(() => {
+                    document.getElementsByClassName(
+                        "contact__toast-success"
+                    )[0].style.display = "none";
+                    document.getElementById("contact-name").value = "";
+                    document.getElementById("contact-email").value = "";
+                    document.getElementById("contact-message").value = "";
+                }, 5000);
+            })
+            .catch((error) => {
+                console.log(error);
+                document.getElementsByClassName(
+                    "contact__toast-failed"
+                )[0].style.display = "block";
+                setTimeout(() => {
+                    document.getElementsByClassName(
+                        "contact__toast-failed"
+                    )[0].style.display = "none";
+                }, 5000);
+            });
+    } catch (error) {
+        console.log(error);
+        document.getElementsByClassName(
+            "contact__toast-failed"
+        )[0].style.display = "block";
+        setTimeout(() => {
+            document.getElementsByClassName(
+                "contact__toast-failed"
+            )[0].style.display = "none";
+        }, 5000);
+    }
+};
+
+const contactSubmitButton = document.getElementById("contact-button");
+contactSubmitButton.addEventListener("click", (event) => {
+    event.preventDefault();
+    sendContactForm();
+});

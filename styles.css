@@ -292,9 +292,12 @@ strong {
 .contact__form-name-label::after {
     content: "*";
     color: red;
+    padding-left: 0.5rem;
 }
 .contact__form-name-input {
     padding: 1rem 0;
+    font-size: 1rem;
+    font-family: "Montserrat", sans-serif;
     width: 100%;
 }
 
@@ -305,10 +308,13 @@ strong {
 .contact__form-email-label::after {
     content: "*";
     color: red;
+    padding-left: 0.5rem;
 }
 
 .contact__form-email-input {
     padding: 1rem 0;
+    font-size: 1rem;
+    font-family: "Montserrat", sans-serif;
     width: 100%;
 }
 
@@ -323,7 +329,14 @@ strong {
     font-weight: 500;
 }
 
+.contact__form-submit:hover {
+    background-color: white;
+    color: black;
+}
+
 .contact__form-message-input {
+    font-size: 1rem;
+    font-family: "Montserrat", sans-serif;
 }
 
 .contact__form-message-label {
@@ -333,8 +346,32 @@ strong {
 .contact__form-message-label::after {
     content: "*";
     color: red;
+    padding-left: 0.5rem;
 }
 
+.contact__toast-success {
+    display: none;
+    position: absolute;
+    background-color: white;
+    padding: 2rem;
+    border: 1px solid black;
+    border-bottom: inset 0.5rem green;
+    border-radius: 0.5rem;
+}
+
+.contact__toast-failed {
+    display: none;
+    position: absolute;
+    background-color: white;
+    padding: 2rem;
+    border: 1px solid black;
+    border-bottom: inset 0.5rem red;
+    border-radius: 0.5rem;
+    text-align: center;
+    color: black;
+}
+
+/* .fa-linked-in */
 /* FOOTER */
 
 .footer {
@@ -350,4 +387,13 @@ strong {
 
 .footer__logo {
     max-height: 2rem;
+}
+
+.footer__links ul {
+    list-style: none;
+    display: flex;
+    column-gap: 1rem;
+}
+.footer__links a {
+    color: white;
 }

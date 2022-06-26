@@ -36,4 +36,5 @@ I learned a big lesson with this project: keep your API keys safe. I accidentall
 
 -   Work on a color scheme to add more color to the page
 -   Add a dedicated about section with WakaTime stats
--   Pagination for more projects.
+-   Pagination for more projects
+-   Contact form validation

@@ -214,13 +214,11 @@ strong {
     margin: 0;
     overflow: hidden;
     padding: 0;
-    /* display: flex; */
     column-gap: 1rem;
     display: inline-flex;
     justify-content: center;
-    align-items: center;
-    align-content: center;
     flex-grow: 2;
+    flex-wrap: wrap;
     align-items: flex-end;
 }
 

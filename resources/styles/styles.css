@@ -1,3 +1,8 @@
+:root {
+    --projects-width: 24.2rem;
+    --project-width-mobile: 20rem;
+}
+
 html {
     height: 100vh;
     /* width: 100vw; */
@@ -155,6 +160,15 @@ strong {
         grid-area: span 1 / span 1;
     }
 }
+
+@media only screen and (max-width: 450px) {
+    .projects {
+        grid-template-columns: repeat(
+            auto-fill,
+            minmax(var(--project-width-mobile), auto)
+        );
+    }
+}
 .project__card {
     grid-area: span 1 / span 1;
     border: 0.5px solid black;
@@ -169,13 +183,20 @@ strong {
 
 .project__title {
     font-size: 2rem;
+    max-width: 80%;
 }
 .project__img {
-    max-width: 22rem;
+    max-width: 80%;
     border: 0.5px solid black;
 }
 
+.project__description {
+    max-width: 80%;
+}
+
 .project__buttons-container {
+    max-width: 80%;
+
     display: flex;
     gap: 2rem;
 }
@@ -209,6 +230,7 @@ strong {
 
 .project__tag-list-container {
     justify-self: flex-end;
+    max-width: 80%;
 }
 
 .project__tag-list {

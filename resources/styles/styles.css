@@ -183,19 +183,19 @@ strong {
 
 .project__title {
     font-size: 2rem;
-    max-width: 80%;
+    max-width: 90%;
 }
 .project__img {
-    max-width: 80%;
+    max-width: 90%;
     border: 0.5px solid black;
 }
 
 .project__description {
-    max-width: 80%;
+    max-width: 90%;
 }
 
 .project__buttons-container {
-    max-width: 80%;
+    max-width: 90%;
 
     display: flex;
     gap: 2rem;
@@ -230,7 +230,7 @@ strong {
 
 .project__tag-list-container {
     justify-self: flex-end;
-    max-width: 80%;
+    max-width: 90%;
 }
 
 .project__tag-list {

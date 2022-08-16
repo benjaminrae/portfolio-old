@@ -1,0 +1,39 @@
+<div class="project__card">
+    <h3 class="project__title">Connect 4</h3>
+    <img
+        src="./resources/images/connect4-screenshot.png"
+        alt="Portfolio Screenshot"
+        class="project__img"
+    />
+    <div class="project__buttons-container">
+        <button class="project__button">
+            <a
+                href="https://aquamarine-ganache-1b7af4.netlify.app/"
+                taget="_blank"
+                >Live</a
+            >
+        </button>
+        <button class="project__button">
+            <a href="https://github.com/benjaminrae/Connect-4" target="_blank"
+                >GitHub</a
+            >
+        </button>
+    </div>
+    <p class="project__description">
+        This project was an extra part of the ISDI Coders precourse. The
+        objective was to create a Connect 4 style game. I used CSS grid for the
+        game grid but flexbox for the rest. The main challenge was creating
+        logic that could be reused if the grid was resized. For horizontal and
+        vertical wins it was easy. One a piece is placed, the row/column is
+        checked for at least 4 consecutive counters from the same player. The
+        diagonals were more difficult since the columns and rows don't stay
+        constant. In the end, I create a starting point by looking for the
+        bottom of the diagonal. Then from there checked the full diagonal for at
+        least 4 consecutive counters by the same player.
+    </p>
+    <ul class="project__tag-list">
+        <li class="project__tag">HTML</li>
+        <li class="project__tag">CSS</li>
+        <li class="project__tag">JS</li>
+    </ul>
+</div>

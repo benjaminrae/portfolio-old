@@ -133,6 +133,10 @@ strong {
     padding: 1rem;
 }
 
+.typescript-logo {
+    height: 60px;
+}
+
 /* PROJECTS */
 
 .projects {
